@@ -1,0 +1,4 @@
+st_id,st_compound
+'S01','gas'
+'S02','liquid'
+'S03','solid'
