@@ -1,4 +1,4 @@
-elem_id,elem_symbol,atomic_number,elem_name_lat,elem_name_en,elem_name_ru,bond_type
+elem_id,elem_symbol,atomic_number,elem_name_lat,elem_name_en,elem_name_ru,bond
 'E01','H',1,'Hydrogenium','Hydrogen','Водород','molecular covalent'
 'E02','He',2,'Helium','Helium','Гелий','single atoms'
 'E03','Li',3,'Lithium','Lithium','Литий','metallic'
