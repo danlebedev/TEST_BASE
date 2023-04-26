@@ -6,37 +6,37 @@ CREATE TABLE elements(
     elem_name_lat   TEXT    NOT NULL,
     elem_name_en    TEXT    NOT NULL,
     elem_name_ru    TEXT    NOT NULL,
-    bond            TEXT    NOT NULL,
     CONSTRAINT pk_elements PRIMARY KEY (elem_id)
 );
-INSERT INTO elements VALUES('E01','H',1,'Hydrogenium','Hydrogen','Водород','molecular covalent');
-INSERT INTO elements VALUES('E02','He',2,'Helium','Helium','Гелий','single atoms');
-INSERT INTO elements VALUES('E03','Li',3,'Lithium','Lithium','Литий','metallic');
-INSERT INTO elements VALUES('E04','Be',4,'Beryllium','Beryllium','Бериллий','metallic');
-INSERT INTO elements VALUES('E05','B',5,'Borum','Boron','Бор','network covalent');
-INSERT INTO elements VALUES('E06','C',6,'Carboneum','Carbon','Углерод','network covalent');
-INSERT INTO elements VALUES('E07','N',7,'Nitrogenium','Nitrogen','Азот','molecular covalent');
-INSERT INTO elements VALUES('E08','O',8,'Oxygenium','Oxygen','Кислород','molecular covalent');
-INSERT INTO elements VALUES('E09','F',9,'Fluorum','Fluorine','Фтор','molecular covalent');
-INSERT into elements VALUES('E10','Ne',10,'Neon','Neon','Неон','single atoms');
+INSERT INTO elements VALUES('E01','H',1,'Hydrogenium','Hydrogen','Водород');
+INSERT INTO elements VALUES('E02','He',2,'Helium','Helium','Гелий');
+INSERT INTO elements VALUES('E03','Li',3,'Lithium','Lithium','Литий');
+INSERT INTO elements VALUES('E04','Be',4,'Beryllium','Beryllium','Бериллий');
+INSERT INTO elements VALUES('E05','B',5,'Borum','Boron','Бор');
+INSERT INTO elements VALUES('E06','C',6,'Carboneum','Carbon','Углерод');
+INSERT INTO elements VALUES('E07','N',7,'Nitrogenium','Nitrogen','Азот');
+INSERT INTO elements VALUES('E08','O',8,'Oxygenium','Oxygen','Кислород');
+INSERT INTO elements VALUES('E09','F',9,'Fluorum','Fluorine','Фтор');
+INSERT into elements VALUES('E10','Ne',10,'Neon','Neon','Неон');
 
 
 DROP TABLE elements_properties;
 CREATE TABLE elements_properties(
     elem_id         TEXT        NOT NULL,
+    bond            TEXT                ,
     atomic_weight   REAL                ,
     CONSTRAINT pk_elements_properties PRIMARY KEY (elem_id)
 );
-INSERT INTO elements_properties VALUES('E01',1.008);
-INSERT INTO elements_properties VALUES('E02',4.0026);
-INSERT INTO elements_properties VALUES('E03',6.94);
-INSERT INTO elements_properties VALUES('E04',9.0122);
-INSERT INTO elements_properties VALUES('E05',10.81);
-INSERT INTO elements_properties VALUES('E06',12.011);
-INSERT INTO elements_properties VALUES('E07',14.007);
-INSERT INTO elements_properties VALUES('E08',15.999);
-INSERT INTO elements_properties VALUES('E09',18.998);
-INSERT INTO elements_properties VALUES('E10',20.180);
+INSERT INTO elements_properties VALUES('E01','molecular covalent',1.008);
+INSERT INTO elements_properties VALUES('E02','single atoms',4.0026);
+INSERT INTO elements_properties VALUES('E03','metallic',6.94);
+INSERT INTO elements_properties VALUES('E04','metallic',9.0122);
+INSERT INTO elements_properties VALUES('E05','network covalent',10.81);
+INSERT INTO elements_properties VALUES('E06','network covalent',12.011);
+INSERT INTO elements_properties VALUES('E07','molecular covalent',14.007);
+INSERT INTO elements_properties VALUES('E08','molecular covalent',15.999);
+INSERT INTO elements_properties VALUES('E09','molecular covalent',18.998);
+INSERT INTO elements_properties VALUES('E10','single atoms',20.180);
 
 
 DROP TABLE chemical_compounds;
