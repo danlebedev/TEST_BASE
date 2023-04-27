@@ -1,4 +1,4 @@
-elem_id,period,group,bond,state,atomic_weight
+elem_id,elem_period,elem_group,bond,state,atomic_weight
 'E01',1,1,'molecular covalent','gas',1.008
 'E02',1,18,'single atoms','gas',4.0026
 'E03',2,1,'metallic','solid',6.94

@@ -23,8 +23,8 @@ INSERT into elements VALUES('E10','Ne',10,'Neon','Neon','Неон');
 DROP TABLE elements_properties;
 CREATE TABLE elements_properties(
     elem_id         TEXT        NOT NULL,
-    period          INTEGER     NOT NULL,
-    group           INTEGER     NOT NULL,
+    elem_period     INTEGER     NOT NULL,
+    elem_group      INTEGER     NOT NULL,
     bond            TEXT                ,
     state           TEXT                ,
     atomic_weight   REAL                ,
