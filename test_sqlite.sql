@@ -23,21 +23,23 @@ INSERT into elements VALUES('E10','Ne',10,'Neon','Neon','Неон');
 DROP TABLE elements_properties;
 CREATE TABLE elements_properties(
     elem_id         TEXT        NOT NULL,
+    period          INTEGER     NOT NULL,
+    group           INTEGER     NOT NULL,
     bond            TEXT                ,
     state           TEXT                ,
     atomic_weight   REAL                ,
     CONSTRAINT pk_elements_properties PRIMARY KEY (elem_id)
 );
-INSERT INTO elements_properties VALUES('E01','molecular covalent','gas',1.008);
-INSERT INTO elements_properties VALUES('E02','single atoms','gas',4.0026);
-INSERT INTO elements_properties VALUES('E03','metallic','solid',6.94);
-INSERT INTO elements_properties VALUES('E04','metallic','solid',9.0122);
-INSERT INTO elements_properties VALUES('E05','network covalent','solid',10.81);
-INSERT INTO elements_properties VALUES('E06','network covalent','solid',12.011);
-INSERT INTO elements_properties VALUES('E07','molecular covalent','gas',14.007);
-INSERT INTO elements_properties VALUES('E08','molecular covalent','gas',15.999);
-INSERT INTO elements_properties VALUES('E09','molecular covalent','gas',18.998);
-INSERT INTO elements_properties VALUES('E10','single atoms','gas',20.180);
+INSERT INTO elements_properties VALUES('E01',1,1,'molecular covalent','gas',1.008);
+INSERT INTO elements_properties VALUES('E02',1,18,'single atoms','gas',4.0026);
+INSERT INTO elements_properties VALUES('E03',2,1,'metallic','solid',6.94);
+INSERT INTO elements_properties VALUES('E04',2,2,'metallic','solid',9.0122);
+INSERT INTO elements_properties VALUES('E05',2,13,'network covalent','solid',10.81);
+INSERT INTO elements_properties VALUES('E06',2,14,'network covalent','solid',12.011);
+INSERT INTO elements_properties VALUES('E07',2,15,'molecular covalent','gas',14.007);
+INSERT INTO elements_properties VALUES('E08',2,16,'molecular covalent','gas',15.999);
+INSERT INTO elements_properties VALUES('E09',2,17,'molecular covalent','gas',18.998);
+INSERT INTO elements_properties VALUES('E10',2,18,'single atoms','gas',20.180);
 
 
 DROP TABLE chemical_compounds;

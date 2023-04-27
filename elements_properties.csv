@@ -1,11 +1,11 @@
-elem_id,bond,state,atomic_weight
-'E01','molecular covalent','gas',1.008
-'E02','single atoms','gas',4.0026
-'E03','metallic','solid',6.94
-'E04','metallic','solid',9.0122
-'E05','network covalent','solid',10.81
-'E06','network covalent','solid',12.011
-'E07','molecular covalent','gas',14.007
-'E08','molecular covalent','gas',15.999
-'E09','molecular covalent','gas',18.998
-'E10','single atoms','gas',20.180
+elem_id,period,group,bond,state,atomic_weight
+'E01',1,1,'molecular covalent','gas',1.008
+'E02',1,18,'single atoms','gas',4.0026
+'E03',2,1,'metallic','solid',6.94
+'E04',2,2,'metallic','solid',9.0122
+'E05',2,13,'network covalent','solid',10.81
+'E06',2,14,'network covalent','solid',12.011
+'E07',2,15,'molecular covalent','gas',14.007
+'E08',2,16,'molecular covalent','gas',15.999
+'E09',2,17,'molecular covalent','gas',18.998
+'E10',2,18,'single atoms','gas',20.180
