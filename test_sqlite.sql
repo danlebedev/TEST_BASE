@@ -28,18 +28,19 @@ CREATE TABLE elements_properties(
     bond            TEXT                ,
     state           TEXT                ,
     atomic_weight   REAL                ,
+    dencity         REAL                ,
     CONSTRAINT pk_elements_properties PRIMARY KEY (elem_id)
 );
-INSERT INTO elements_properties VALUES('E01',1,1,'molecular covalent','gas',1.008);
-INSERT INTO elements_properties VALUES('E02',1,18,'single atoms','gas',4.0026);
-INSERT INTO elements_properties VALUES('E03',2,1,'metallic','solid',6.94);
-INSERT INTO elements_properties VALUES('E04',2,2,'metallic','solid',9.0122);
-INSERT INTO elements_properties VALUES('E05',2,13,'network covalent','solid',10.81);
-INSERT INTO elements_properties VALUES('E06',2,14,'network covalent','solid',12.011);
-INSERT INTO elements_properties VALUES('E07',2,15,'molecular covalent','gas',14.007);
-INSERT INTO elements_properties VALUES('E08',2,16,'molecular covalent','gas',15.999);
-INSERT INTO elements_properties VALUES('E09',2,17,'molecular covalent','gas',18.998);
-INSERT INTO elements_properties VALUES('E10',2,18,'single atoms','gas',20.180);
+INSERT INTO elements_properties VALUES('E01',1,1,'molecular covalent','gas',1.008,0.00008988);
+INSERT INTO elements_properties VALUES('E02',1,18,'single atoms','gas',4.0026,0.0001785);
+INSERT INTO elements_properties VALUES('E03',2,1,'metallic','solid',6.94,0.534);
+INSERT INTO elements_properties VALUES('E04',2,2,'metallic','solid',9.0122,1.85);
+INSERT INTO elements_properties VALUES('E05',2,13,'network covalent','solid',10.81,2.34);
+INSERT INTO elements_properties VALUES('E06',2,14,'network covalent','solid',12.011,2.265);
+INSERT INTO elements_properties VALUES('E07',2,15,'molecular covalent','gas',14.007,0.0012506);
+INSERT INTO elements_properties VALUES('E08',2,16,'molecular covalent','gas',15.999,0.001429);
+INSERT INTO elements_properties VALUES('E09',2,17,'molecular covalent','gas',18.998,0.001693);
+INSERT INTO elements_properties VALUES('E10',2,18,'single atoms','gas',20.180,0.00090035);
 
 
 DROP TABLE chemical_compounds;
