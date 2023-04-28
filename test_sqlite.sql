@@ -6,18 +6,19 @@ CREATE TABLE elements(
     elem_name_lat   TEXT    NOT NULL,
     elem_name_en    TEXT    NOT NULL,
     elem_name_ru    TEXT    NOT NULL,
+    added_date      NUMERIC NOT NULL,
     CONSTRAINT pk_elements PRIMARY KEY (elem_id)
 );
-INSERT INTO elements VALUES('E01','H',1,'Hydrogenium','Hydrogen','Водород');
-INSERT INTO elements VALUES('E02','He',2,'Helium','Helium','Гелий');
-INSERT INTO elements VALUES('E03','Li',3,'Lithium','Lithium','Литий');
-INSERT INTO elements VALUES('E04','Be',4,'Beryllium','Beryllium','Бериллий');
-INSERT INTO elements VALUES('E05','B',5,'Borum','Boron','Бор');
-INSERT INTO elements VALUES('E06','C',6,'Carboneum','Carbon','Углерод');
-INSERT INTO elements VALUES('E07','N',7,'Nitrogenium','Nitrogen','Азот');
-INSERT INTO elements VALUES('E08','O',8,'Oxygenium','Oxygen','Кислород');
-INSERT INTO elements VALUES('E09','F',9,'Fluorum','Fluorine','Фтор');
-INSERT into elements VALUES('E10','Ne',10,'Neon','Neon','Неон');
+INSERT INTO elements VALUES('E01','H',1,'Hydrogenium','Hydrogen','Водород','10-01-2023');
+INSERT INTO elements VALUES('E02','He',2,'Helium','Helium','Гелий','10-01-2023');
+INSERT INTO elements VALUES('E03','Li',3,'Lithium','Lithium','Литий','10-01-2023');
+INSERT INTO elements VALUES('E04','Be',4,'Beryllium','Beryllium','Бериллий','25-03-2023');
+INSERT INTO elements VALUES('E05','B',5,'Borum','Boron','Бор','25-03-2023');
+INSERT INTO elements VALUES('E06','C',6,'Carboneum','Carbon','Углерод','25-03-2023');
+INSERT INTO elements VALUES('E07','N',7,'Nitrogenium','Nitrogen','Азот','28-04-2023');
+INSERT INTO elements VALUES('E08','O',8,'Oxygenium','Oxygen','Кислород','28-04-2023');
+INSERT INTO elements VALUES('E09','F',9,'Fluorum','Fluorine','Фтор','28-04-2023');
+INSERT into elements VALUES('E10','Ne',10,'Neon','Neon','Неон','28-04-2023');
 
 
 DROP TABLE elements_properties;
