@@ -1,4 +1,4 @@
-﻿elem_id,elem_symbol,atomic_number,elem_name_lat,elem_name_en,elem_name_ru,added_date
+﻿elem_id,elem_symbol,atomic_number,elem_name_lat,elem_name_en,elem_name_ru,add_date
 'E01','H',1,'Hydrogenium','Hydrogen','Водород','10-01-2023'
 'E02','He',2,'Helium','Helium','Гелий','10-01-2023'
 'E03','Li',3,'Lithium','Lithium','Литий','10-01-2023'
