@@ -1,7 +1,7 @@
-comp_id,chem_formula,comp_name,st_id
-'C01','H2O','water','S02'
-'C02','CH4','methane','S01'
-'C03','H3BO3','boric acid','S03'
-'C04','Be(OH)2','beryllium hydroxide','S03'
-'C05','NH3','ammonia','S01'
-'C06','LiF','lithium fluoride','S03'
+comp_id,chem_formula,comp_name,solubility_H2O,dencity,st_id
+'C01','H2O','water',NULL,0.9982,'S02'
+'C02','CH4','methane',0.0022,0.0007168,'S01'
+'C03','H3BO3','boric acid',5.74,1.435,'S03'
+'C04','Be(OH)2','beryllium hydroxide',0.0063,1.92,'S03'
+'C05','NH3','ammonia',46.2,0.00077,'S01'
+'C06','LiF','lithium fluoride',0.13,2.635,'S03'

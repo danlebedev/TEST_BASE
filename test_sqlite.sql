@@ -49,15 +49,17 @@ CREATE TABLE chemical_compounds(
     comp_id         TEXT    NOT NULL,
     chem_formula    TEXT            ,
     comp_name       TEXT            ,
+    solubility_H2O  REAL            ,
+    dencity         REAL            ,
     st_id           TEXT    NOT NULL,
     CONSTRAINT pk_chemical_compounds PRIMARY KEY (comp_id)
 );
-INSERT INTO chemical_compounds VALUES('C01','H2O','water','S02');
-INSERT INTO chemical_compounds VALUES('C02','CH4','methane','S01');
-INSERT INTO chemical_compounds VALUES('C03','H3BO3','boric acid','S03');
-INSERT INTO chemical_compounds VALUES('C04','Be(OH)2','beryllium hydroxide','S03');
-INSERT INTO chemical_compounds VALUES('C05','NH3','ammonia','S01');
-INSERT INTO chemical_compounds VALUES('C06','LiF','lithium fluoride','S03');
+INSERT INTO chemical_compounds VALUES('C01','H2O','water',NULL,0.9982,'S02');
+INSERT INTO chemical_compounds VALUES('C02','CH4','methane',0.0022,0.0007168,'S01');
+INSERT INTO chemical_compounds VALUES('C03','H3BO3','boric acid',5.74,1.435,'S03');
+INSERT INTO chemical_compounds VALUES('C04','Be(OH)2','beryllium hydroxide',0.0063,1.92,'S03');
+INSERT INTO chemical_compounds VALUES('C05','NH3','ammonia',46.2,0.00077,'S01');
+INSERT INTO chemical_compounds VALUES('C06','LiF','lithium fluoride',0.13,2.635,'S03');
 
 
 DROP TABLE elements_in_compound;
