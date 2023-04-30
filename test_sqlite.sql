@@ -6,7 +6,7 @@ CREATE TABLE elements(
     elem_name_lat   TEXT    NOT NULL,
     elem_name_en    TEXT    NOT NULL,
     elem_name_ru    TEXT    NOT NULL,
-    add_date        NUMERIC NOT NULL,
+    pubdate         NUMERIC NOT NULL,
     CONSTRAINT pk_elements PRIMARY KEY (elem_id)
 );
 INSERT INTO elements VALUES('E01','H',1,'Hydrogenium','Hydrogen','Водород','10-01-2023');
