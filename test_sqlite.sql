@@ -49,7 +49,7 @@ CREATE TABLE chemical_compounds(
     comp_id         TEXT    NOT NULL,
     chem_formula    TEXT            ,
     comp_name       TEXT            ,
-    solubility_H2O  REAL            ,
+    solubility_h2o  REAL            ,
     dencity         REAL            ,
     st_id           TEXT    NOT NULL,
     CONSTRAINT pk_chemical_compounds PRIMARY KEY (comp_id)
@@ -59,7 +59,8 @@ INSERT INTO chemical_compounds VALUES('C02','CH4','methane',0.0022,0.0007168,'S0
 INSERT INTO chemical_compounds VALUES('C03','H3BO3','boric acid',5.74,1.435,'S03');
 INSERT INTO chemical_compounds VALUES('C04','Be(OH)2','beryllium hydroxide',0.0063,1.92,'S03');
 INSERT INTO chemical_compounds VALUES('C05','NH3','ammonia',46.2,0.00077,'S01');
-INSERT INTO chemical_compounds VALUES('C06','LiF','lithium fluoride',0.13,2.635,'S03');
+INSERT INTO chemical_compounds VALUES('CO6','LiH','lithium hydride',NULL,0.78,'S03');
+INSERT INTO chemical_compounds VALUES('C07','LiF','lithium fluoride',0.13,2.635,'S03');
 
 
 DROP TABLE elements_in_compound;
@@ -82,7 +83,9 @@ INSERT INTO elements_in_compound VALUES('C04','E01',2);
 INSERT INTO elements_in_compound VALUES('C05','E07',1);
 INSERT INTO elements_in_compound VALUES('C05','E01',3);
 INSERT INTO elements_in_compound VALUES('C06','E03',1);
-INSERT INTO elements_in_compound VALUES('C06','E09',1);
+INSERT INTO elements_in_compound VALUES('CO6','E01',1);
+INSERT INTO elements_in_compound VALUES('C07','E03',1);
+INSERT INTO elements_in_compound VALUES('C07','E09',1);
 
 
 DROP TABLE state_of_compound;
