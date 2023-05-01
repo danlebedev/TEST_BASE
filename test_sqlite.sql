@@ -9,16 +9,16 @@ CREATE TABLE elements(
     pubdate         NUMERIC NOT NULL,
     CONSTRAINT pk_elements PRIMARY KEY (elem_id)
 );
-INSERT INTO elements VALUES('E01','H',1,'Hydrogenium','Hydrogen','Водород','10-01-2023');
-INSERT INTO elements VALUES('E02','He',2,'Helium','Helium','Гелий','10-01-2023');
-INSERT INTO elements VALUES('E03','Li',3,'Lithium','Lithium','Литий','10-01-2023');
-INSERT INTO elements VALUES('E04','Be',4,'Beryllium','Beryllium','Бериллий','25-03-2023');
-INSERT INTO elements VALUES('E05','B',5,'Borum','Boron','Бор','25-03-2023');
-INSERT INTO elements VALUES('E06','C',6,'Carboneum','Carbon','Углерод','25-03-2023');
-INSERT INTO elements VALUES('E07','N',7,'Nitrogenium','Nitrogen','Азот','28-04-2023');
-INSERT INTO elements VALUES('E08','O',8,'Oxygenium','Oxygen','Кислород','28-04-2023');
-INSERT INTO elements VALUES('E09','F',9,'Fluorum','Fluorine','Фтор','28-04-2023');
-INSERT into elements VALUES('E10','Ne',10,'Neon','Neon','Неон','28-04-2023');
+INSERT INTO elements VALUES('E01','H',1,'Hydrogenium','Hydrogen','Водород','2023-01-10');
+INSERT INTO elements VALUES('E02','He',2,'Helium','Helium','Гелий','2023-01-10');
+INSERT INTO elements VALUES('E03','Li',3,'Lithium','Lithium','Литий','2023-01-10');
+INSERT INTO elements VALUES('E04','Be',4,'Beryllium','Beryllium','Бериллий','2023-02-25');
+INSERT INTO elements VALUES('E05','B',5,'Borum','Boron','Бор','2023-02-25');
+INSERT INTO elements VALUES('E06','C',6,'Carboneum','Carbon','Углерод','2023-02-25');
+INSERT INTO elements VALUES('E07','N',7,'Nitrogenium','Nitrogen','Азот','2023-03-28');
+INSERT INTO elements VALUES('E08','O',8,'Oxygenium','Oxygen','Кислород','2023-03-28');
+INSERT INTO elements VALUES('E09','F',9,'Fluorum','Fluorine','Фтор','2023-03-28');
+INSERT into elements VALUES('E10','Ne',10,'Neon','Neon','Неон','2023-03-28');
 
 
 DROP TABLE elements_properties;
@@ -51,16 +51,17 @@ CREATE TABLE chemical_compounds(
     comp_name       TEXT            ,
     solubility_h2o  REAL            ,
     dencity         REAL            ,
+    pubdate         NUMERIC NOT NULL,
     st_id           TEXT    NOT NULL,
     CONSTRAINT pk_chemical_compounds PRIMARY KEY (comp_id)
 );
-INSERT INTO chemical_compounds VALUES('C01','H2O','water',NULL,0.9982,'S02');
-INSERT INTO chemical_compounds VALUES('C02','CH4','methane',0.0022,0.0007168,'S01');
-INSERT INTO chemical_compounds VALUES('C03','H3BO3','boric acid',5.74,1.435,'S03');
-INSERT INTO chemical_compounds VALUES('C04','Be(OH)2','beryllium hydroxide',0.0063,1.92,'S03');
-INSERT INTO chemical_compounds VALUES('C05','NH3','ammonia',46.2,0.00077,'S01');
-INSERT INTO chemical_compounds VALUES('CO6','LiH','lithium hydride',NULL,0.78,'S03');
-INSERT INTO chemical_compounds VALUES('C07','LiF','lithium fluoride',0.13,2.635,'S03');
+INSERT INTO chemical_compounds VALUES('C01','H2O','water',NULL,0.9982,'2023-04-15','S02');
+INSERT INTO chemical_compounds VALUES('C02','CH4','methane',0.0022,0.0007168,'2023-04-15','S01');
+INSERT INTO chemical_compounds VALUES('C03','H3BO3','boric acid',5.74,1.435,'2023-04-15','S03');
+INSERT INTO chemical_compounds VALUES('C04','Be(OH)2','beryllium hydroxide',0.0063,1.92,'2023-05-15','S03');
+INSERT INTO chemical_compounds VALUES('C05','NH3','ammonia',46.2,0.00077,'2023-05-01','S01');
+INSERT INTO chemical_compounds VALUES('CO6','LiH','lithium hydride',NULL,0.78,'2023-06-07','S03');
+INSERT INTO chemical_compounds VALUES('C07','LiF','lithium fluoride',0.13,2.635,'2023-06-07','S03');
 
 
 DROP TABLE elements_in_compound;
