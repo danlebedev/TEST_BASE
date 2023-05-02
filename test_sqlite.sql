@@ -58,8 +58,8 @@ CREATE TABLE chemical_compounds(
 INSERT INTO chemical_compounds VALUES('C01','H2O','water',NULL,0.9982,'2023-04-15','S02');
 INSERT INTO chemical_compounds VALUES('C02','CH4','methane',0.0022,0.0007168,'2023-04-15','S01');
 INSERT INTO chemical_compounds VALUES('C03','H3BO3','boric acid',5.74,1.435,'2023-04-15','S03');
-INSERT INTO chemical_compounds VALUES('C04','Be(OH)2','beryllium hydroxide',0.0063,1.92,'2023-05-15','S03');
-INSERT INTO chemical_compounds VALUES('C05','NH3','ammonia',46.2,0.00077,'2023-05-01','S01');
+INSERT INTO chemical_compounds VALUES('C04','Be(OH)2','beryllium hydroxide',0.0063,1.92,'2023-05-12','S03');
+INSERT INTO chemical_compounds VALUES('C05','NH3','ammonia',46.2,0.00077,'2023-05-12','S01');
 INSERT INTO chemical_compounds VALUES('CO6','LiH','lithium hydride',NULL,0.78,'2023-06-07','S03');
 INSERT INTO chemical_compounds VALUES('C07','LiF','lithium fluoride',0.13,2.635,'2023-06-07','S03');
 
